@@ -1,0 +1,587 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding: 15px;
+    margin: auto;
+}
+
+li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/** Start Main Css **/
+
+.header-sec .logo img {
+    width: 24%;
+}
+.header-sec .right-sec ul {
+    margin-left: auto;
+    align-items: center;
+}
+.header-sec .right-sec ul li .nav-link {
+    color: #000;
+}
+.header-sec .right-sec ul li .nav-link.call {
+    background-color: #0984e3;
+    color: #fff;
+    padding: 13px 30px;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.header-sec .right-sec ul li {
+    padding-left: 30px;
+}
+.banner {
+    background-color: #00264f;
+}
+.banner .banner-content .banner-title {
+    font-size: 90px;
+    color: #fff;
+    padding: 50px 0;
+}
+.banner .banner-content .banner-form {
+    background-color: #ffb200;
+    line-height: 50px;
+    padding: 20px;
+}
+.banner .banner-content .banner-form .submit-btn {
+    margin-top: 30px;
+    padding: 10px 30px;
+}
+.banner .banner-content .banner-form input {
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+}
+.banner .banner-content .banner-form .name p {
+    font-size: 12px;
+    padding-left: 6px;
+    margin-top: -10px;
+    height: 30px;
+}
+.banner .banner-content .banner-form .email input {
+    width: 60%;
+}
+.banner .banner-content .banner-form .phone-number input {
+    width: 60%;
+}
+.featured-work .img-gallery {
+        width: 80%;
+        margin: 100px auto 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 30px;
+}
+.featured-work .img-gallery img {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+.featured-work .img-gallery img:hover {
+   transform: scale(0.8) rotate(-15deg);
+   border-radius: 20px;
+   box-shadow: 0 32px 7px rgba(68, 77, 136, 0.2);
+}
+.featured-work .full-img {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.featured-work .full-img img {
+    width: 90%;
+    max-width: 500px;
+}
+.featured-work .full-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.featured-work .btn {
+    width: 100%;
+}
+.featured-work .btn a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #f38d00;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    width: 130px;
+    margin: auto;
+    border-radius: 6px;
+}
+.what-we-do .details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.what-we-do .details .box-content img {
+    width: 100%;
+}
+.what-we-do .details .box-content {
+    margin-left: 30px;
+}
+.what-we-do .details .box-content:first-child {
+    margin-left: 0;
+}
+.what-we-do .btn {
+    width: 100%;
+    margin-top: 50px;
+}
+.what-we-do .btn a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #f38d00;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    width: 130px;
+    margin: auto;
+    border-radius: 6px;
+}
+.let-talk {
+    background: url(../images/bg-tt.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 100px 0;
+    margin-top: 50px;
+}
+.let-talk .content h2 {
+    text-shadow: 5px 5px 5px #020202;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 800;
+}
+.let-talk .content a {
+    display: block;
+    text-decoration: none;
+    padding: 50px 0;
+    font-size: 38px;
+    font-weight: 700;
+    color: #ffcc00;
+    text-align: center;
+    text-shadow: 5px 5px 5px #020202;
+}
+.let-talk .content .quote {
+    background-color: #ff9900;
+    text-shadow: 0 0 black;
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 26%;
+    border: 2px solid #000;
+    margin: auto;
+}
+.divider {
+    width: 100%;
+    height: 10px;
+    background-color: #ff9900;
+}
+.footer {
+    background: linear-gradient(176deg,rgb(9,132,227) 14%,rgb(0,59,177) 72%);
+}
+.footer .footer-content {
+    display: flex;
+    padding: 50px 0;
+}
+.footer .footer-content .box-f {
+    width: 50%;
+    color: #fff;
+}
+.footer .footer-content .box-f .f-title {
+    padding-bottom: 20px;
+}
+.footer .footer-content .who-we-are .social li {
+    display: inline-block;
+    padding: 10px;
+}
+.footer .footer-content .who-we-are .social li a {
+    color: #fff;
+    font-size: 22px;
+}
+.footer .footer-content .social {
+    padding: 0;
+}
+.footer .footer-content .useful-link ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer .footer-content .contact ul li .contact-icon {
+    display: flex;
+}
+.footer .footer-content .contact ul li .contact-icon span {
+    width: 200px;
+    padding-left: 10px;
+}
+.footer .footer-content .contact ul li {
+    padding-bottom: 20px;
+}
+.footer .footer-bottom {
+    display: flex;
+    align-items: center;
+}
+.footer .footer-bottom .right-sec {
+    margin-left: auto;
+}
+.footer .footer-bottom p {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hamburger-icon {
+    margin:auto 0;
+    display:none;
+    cursor: pointer;
+}
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color:#fff;
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #fff;
+    z-index: 999;
+    transition: all 1s ease-in-out;
+    padding: 30px;
+}
+  
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    -webkit-transition: all 1s ease-in-out;
+}
+  
+  .mobile-menu li {
+    margin-bottom: 10px;
+}
+.open .mobile-menu li:hover {
+    background: #fdbe00;
+}
+.banner-image-mobile {
+    display: none;
+}
+
+
+
+
+
+#contact-wa .sticky-btn {
+    position: fixed;
+    bottom: -96px;
+    right: 33px;
+    background: rgba(255, 255, 255, 0.81);
+    padding: 12px;
+    border-radius: 50%;
+    transition: all 0.8s ease;
+  }
+  #contact-wa .sticky-btn:hover {
+    background: rgba(255, 255, 255, 0.81);
+    transform: translateY(-3px);
+  }
+  #contact-wa .sticky-btn img {
+    width: 45px;
+  }
+  
+  #contact-wa .sticky-btn.revealed {
+      bottom: 19px;
+      opacity: 1;
+      z-index: 99999;
+  }
+
+
+
+/** Start Contact page Css **/
+.contact-us {
+    background-color: #fafafa;
+    padding: 100px 0;
+}
+.contact-us .contact-top {
+    display: flex;
+    justify-content: center;
+}
+.contact-us .contact-top .box {
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    margin-right: 20px;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+}
+.contact-us .contact-top .box .icon {
+    border: 2px solid #0984e3;
+    border-radius: 50px;
+    width: 18%;
+    margin: auto;
+    padding: 10px;
+}
+.contact-us .contact-top .box .icon i {
+    font-size: 30px;
+    color: #0984e3;
+}
+.contact-us .contact-top .box a {
+    display: block;
+    text-decoration: none;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0984e3;
+}
+.contact-us .contact-top .location a {
+    color: #000;
+}
+.contact-us .title {
+    text-align: center;
+    padding: 60px 0;
+}
+.contact-us .main-form {
+    background: #fff;
+    padding: 50px;
+    width: 75%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+}
+.contact-us .main-form label {
+    font-size: 16px;
+    font-weight: 600;
+}
+.contact-us .main-form .field {
+    margin-bottom: 30px;
+}
+.contact-us .main-form .field input {
+    background: #fafafa;
+    border-color: #eaeaea;
+    border-radius: 0;
+    height: 50px;
+}
+.contact-us .main-form .field textarea {
+    background: #fafafa;
+    border-color: #eaeaea;
+    border-radius: 0;
+    height: 50px;
+}
+.contact-us .main-form .submit-btn {
+    background-color: #0984e3;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+/** End Contact page Css **/
+
+/** Start What we do page Css **/
+.body-content .whole-sec .box {
+    background: -moz-linear-gradient(top,#ffffff 0%, #f0f0f0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f0f0f0));
+    background: -webkit-linear-gradient(top,#ffffff 0%,#f0f0f0 100%);
+    background: -o-linear-gradient(top,#ffffff 0%,#f0f0f0 100%);
+    background: -ms-linear-gradient(top,#ffffff 0%,#f0f0f0 100%);
+    background: linear-gradient(to bottom,#ffffff 0%,#f0f0f0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0',GradientType=0 );
+}
+.body-content .whole-sec .box .title {
+    background: #f1a90f;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+.body-content .whole-sec .box i {
+    font-size: 56px;
+}
+.body-content .whole-sec .box .icon {
+    width: 10%;
+    margin: auto;
+    padding: 30px 0;
+}
+.body-content .whole-sec .box .work-content {
+    border-top: 1px solid #dcdcdc;
+    position: relative;
+    padding-top: 30px;
+}
+.body-content .whole-sec .box .work-content::after {
+    border-top: 1px solid #dcdcdc;
+    position: absolute;
+    content: "";
+    top: 5px;
+    width: 100%;
+    left: 0;
+}
+.body-content .whole-sec .box .work-content li {
+    list-style-type: auto;
+    padding-bottom: 15px;
+}
+.body-content .whole-sec {
+    display: flex;
+}
+.body-content .whole-sec .left-sec {
+    width: 50%;
+    margin-right: 120px;
+}
+.body-content .whole-sec .right-sec {
+    width: 50%;
+}
+.body-content {
+    padding: 100px 0;
+}
+.let-talk {
+    background: url(../images/bg-tt.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 100px 0;
+    margin-top: 50px;
+}
+.let-talk .content h2 {
+    text-shadow: 5px 5px 5px #020202;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 800;
+}
+.let-talk .content a {
+    display: block;
+    text-decoration: none;
+    padding: 50px 0;
+    font-size: 38px;
+    font-weight: 700;
+    color: #ffcc00;
+    text-align: center;
+    text-shadow: 5px 5px 5px #020202;
+}
+.let-talk .content .quote {
+    background-color: #ff9900;
+    text-shadow: 0 0 black;
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 26%;
+    border: 2px solid #000;
+    margin: auto;
+}
+/** End What we do page Css **/
+
+
+/** Start Who we are page css **/
+.about-our-cmpny {
+    background-color: #fafafa;
+    padding: 100px 0;
+}
+.about-our-cmpny .all-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+.about-our-cmpny .all-content .right-sec {
+    box-shadow: 0px 15px 30px 5px rgb(0 0 0 / 6%);
+    padding: 50px;
+    margin-left: 80px;
+    width: 80%;
+    border-radius: 6px;
+}
+.about-our-cmpny .all-content .all-content-details {
+    display: flex;
+    align-items: center;
+}
+.about-our-cmpny .all-content .all-content-details .left-sec .images-flex {
+    display: flex;
+    align-items: center;
+}
+.about-our-cmpny .all-content .all-content-details .left-sec .images-flex .second-img {
+    margin-top: 290px;
+    margin-left: 30px;
+}
+.about-our-cmpny .all-content .all-content-details .left-sec .images-flex .second-img p {
+    padding-top: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+.about-our-cmpny .all-content .all-content-details .left-sec .images-flex .first-img p {
+    padding-top: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+.about-our-cmpny .all-content .right-sec .details h3.title {
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+.about-our-cmpny .all-content .right-sec .details .paragraph {
+    line-height: 42px;
+}
+/** End Who we are page css **/
+
+

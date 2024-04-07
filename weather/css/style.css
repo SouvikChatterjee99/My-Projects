@@ -85,3 +85,12 @@ body {
 .weather {
     display: none;
 }
+.error {
+    display: none;
+}
+.error p {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #cd0101;
+}

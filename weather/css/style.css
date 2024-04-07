@@ -12,11 +12,14 @@ body {
     max-width: 500px;
     color: #fff;
     text-align: center;
-    margin: 100px auto 0;
     padding: 40px;
     border-radius: 20px;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgb(0 185 255) 35%, rgb(0 255 173) 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .card .search {
     display: flex;
@@ -78,4 +81,7 @@ body {
 }
 .details .col .humidity, .wind {
     font-size: 24px;
+}
+.weather {
+    display: none;
 }
